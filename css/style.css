@@ -98,6 +98,10 @@ a {
     color: var(--white);
   }
 
+  #main_menu .navbar-nav .nav-item.booking a:hover {
+    background: var(--hover);
+}
+
   /* Menu Css End */
 
   /* Banner css start */
@@ -214,3 +218,100 @@ a {
 
 
   /* Banner css end */
+
+
+  /* Food Menu Css Start */
+  #foodmenu{
+    padding-top: 120px;
+    background: url(../images/food-menu-bg.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  #foodmenu .time-image{
+    position: relative;
+  }
+
+  #foodmenu .time-image img{
+    width: 100%;
+    height: 500px;
+  }
+
+  #foodmenu .time-image .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0, 0.8));
+}
+
+#foodmenu .time-image .text h6{
+  color: var(--white);
+  font-family: var(--primaryfont);
+  font-size: 24px;
+  margin-top: 350px;
+  margin-bottom: 15px;
+}
+#foodmenu .time-image .text span{
+  color: var(--white);
+  font-family: var(--primaryfont);
+  font-size: 16px;
+  display: block;
+}
+
+#foodmenu .text-area{
+  margin-top: 30px;
+}
+
+#foodmenu .text-area h6{
+  font-family: var(--primaryfont);
+  font-size: 18px;
+  color: var(--black);
+}
+
+#foodmenu .text-area h2 {
+  font-family: var(--primaryfont);
+  font-size: 60px;
+  color: var(--secondary);
+}
+
+#foodmenu .text-area h3 {
+  font-family: var(--primaryfont);
+  font-size: 30px;
+  color: var(--black);
+}
+
+#foodmenu .text-area p {
+  font-family: var(--primaryfont);
+  font-size: 16px;
+  color: var(--black);
+  margin-top: 25px;
+}
+
+#foodmenu .text-area p span{
+  display: block;
+  margin-top: 10px;
+}
+
+#foodmenu .text-area a {
+  font-family: var(--primaryfont);
+  font-size: 18px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 7px 30px;
+  margin-block: 30px;
+  border-radius: 30px;
+  transition: all linear .3s;
+}
+
+#foodmenu .text-area a:hover{
+  background: var(--hover);
+}
+
+  /* Food Menu Css End */
