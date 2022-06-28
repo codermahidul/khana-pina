@@ -34,4 +34,183 @@ a {
     padding: 0;
 }
 
+/* Custom Font */
 
+@font-face {
+    font-family: stylishfont;
+    src: url(../fonts/stylish-font.ttf);
+  }
+
+@font-face {
+    font-family: regularfont;
+    src: url(../fonts/regular-font.ttf);
+  }
+
+
+  /* CSS Variable */
+
+  :root {
+    --primary: #ff770f;
+    --secondary: #000000;
+    --hover: #eb6700;
+    --black: #313338;
+    --white: #ffffff;
+    --primaryfont: regularfont;
+    --secondaryfont: stylishfont;
+  }
+
+
+  /* Menu Css Start */
+  #main_menu .navbar{
+    height: 60px;
+  }
+
+  #main_menu .navbar .navbar-brand img{
+    height: 60px;
+  }
+
+#main_menu .navbar-nav .nav-item a{
+    color: var(--secondary);
+    font-family: var(--primaryfont);
+    font-size: 18px;
+    font-weight: 400;
+    transition: all linear .3s;
+    margin: 0 10px;
+}
+
+#main_menu .navbar-nav .nav-item.booking a {
+    color: var(--white);
+    background: var(--primary);
+    border-radius: 50px;
+    padding: 8px 30px;
+}
+
+  
+#main_menu .navbar-nav .nav-item a.active{
+    color: var(--hover);
+}
+
+ #main_menu .navbar-nav .nav-item a:hover{
+    color: var(--hover);
+  }
+
+  #main_menu .navbar-nav .nav-item.booking a:hover{
+    color: var(--white);
+  }
+
+  /* Menu Css End */
+
+  /* Banner css start */
+  #banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  #banner .overly{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  #banner .text_area{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #banner .text_area h1 {
+    font-family: var(--secondaryfont);
+    font-size: 180px;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+#banner .text_area h1::before{
+  position: absolute;
+  content: '';
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 27px;
+  background: url(../images/frill-free-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#banner .text_area h6 {
+  font-family: var(--primaryfont);
+  font-size: 35px;
+  color: var(--white);
+  margin-top: 60px;
+  position: relative;
+}
+
+#banner .text_area h6::before {
+  position: absolute;
+  content: '';
+  right: 520px;
+  bottom: 0;
+  background: url(../images/knife-free-imge.png);
+  width: 57px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+#banner .text_area h6::after {
+  position: absolute;
+  content: '';
+  left: 520px;
+  bottom: 0;
+  background: url(../images/fork-free-img.png);
+  width: 57px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+
+
+#banner .text_area p {
+  font-family: var(--primaryfont);
+  font-size: 16px;
+  color: var(--white);
+  letter-spacing: 2px;
+  position: relative;
+}
+
+
+#banner .text_area p::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 2px;
+  right: 345px;
+  background: var(--white);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#banner .text_area p::after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 2px;
+  left: 345px;
+  background: var(--white);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+  /* Banner css end */
